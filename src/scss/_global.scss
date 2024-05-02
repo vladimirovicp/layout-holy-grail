@@ -18,7 +18,7 @@ body {
     font-weight: bold;
     color: #000;
     background: #FFF;
-    line-height: 160%;
+    line-height: 1.5;
     letter-spacing: 0.048rem;
     min-width: 320px;
     font-size: 0.875rem;
@@ -80,7 +80,7 @@ ul, li{
 }
 
 .main{
-    height: calc(100vh - 11.7rem);
+    min-height: calc(100vh - 11.7rem);
 }
 
 .img-full{
@@ -89,6 +89,8 @@ ul, li{
     flex-shrink: 0;
     object-fit: contain;
 }
+
+
 
 
 
@@ -101,4 +103,8 @@ ul, li{
         width: 90rem;
         margin: 0 auto;
     }
+}
+
+@media(max-width: 48em){
+    
 }
