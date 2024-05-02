@@ -1,1 +1,30 @@
-header.header header
+header.header
+    .container
+        .header__logo
+            .header__logo-img
+                img(src=require('../../pug/imagePaths.js').logo class='img-full' alt='Логотип')
+            .header__logo-text Holy Grail
+        .header__menu
+            .menu__icon
+                span 
+            nav.header__nav
+                ul.header__nav-list
+                    li.header__nav-item
+                        a(href="/" class='header__nav-link') home
+                    li.header__nav-item
+                        a(href="/" class='header__nav-link') catalog
+                    li.header__nav-item
+                        a(href="/" class='header__nav-link') about us
+                    .header__links
+
+            ul.header__links-list
+                li.header__links-item
+                    a(href="/" class='header__links-link') login
+                li.header__links-item
+                    a(href="/" class='header__links-link') register
+                li.header__links-item
+                    a(href="/" class='header__links-link') basket
+
+
+
+            
