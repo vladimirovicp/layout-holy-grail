@@ -1,0 +1,14 @@
+doctype html
+block variables_layout
+block vars
+    curPage
+html(lang= 'en')
+    head
+        meta(charset='utf-8')
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        title Consult Product — #{title}
+        meta(content="width=device-width, initial-scale=1", name="viewport")
+    body
+        include ../component/header
+        block content
+        include ../component/footer
