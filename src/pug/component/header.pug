@@ -10,7 +10,7 @@ header.header
             nav.header__nav
                 ul.header__nav-list
                     li.header__nav-item
-                        a(href="/" class='header__nav-link') home
+                        a(href="/" class='header__nav-link active') home
                     li.header__nav-item
                         a(href="/" class='header__nav-link') catalog
                     li.header__nav-item
@@ -19,11 +19,14 @@ header.header
 
             ul.header__links-list
                 li.header__links-item
-                    a(href="/" class='header__links-link') login
+                    a(href="/" class='header__links-link underline') login
                 li.header__links-item
-                    a(href="/" class='header__links-link') register
+                    a(href="/" class='header__links-link underline') register
                 li.header__links-item
-                    a(href="/" class='header__links-link') basket
+                    a(href="/" class='header__links-link')
+                        .header__basket-img
+                            img(src=require('../../pug/imagePaths.js').basket class='img-full' alt='Basket')
+
 
 
 

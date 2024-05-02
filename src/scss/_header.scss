@@ -7,12 +7,18 @@
     &__logo{
         display: flex;
         align-items: center;
-        gap: .2rem
+        gap: .2rem;
 
-    }
-    &__logo-img{
-        width: 2.2rem;
-        height: 1.2rem;
+        &-text{
+            line-height: 0;
+            text-transform: uppercase;
+        }
+
+        &-img{
+            width: 2.2rem;
+            height: 1.2rem;
+        }
+
     }
 
     &__menu{
@@ -52,11 +58,23 @@
             gap: 1.5rem;
         }
 
-        &-link{
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 0.875rem ;
+        &-item{
+            display: flex;
+            align-items: center;
         }
+
+        &-link{
+            position: relative;
+            display: flex;
+            align-items:center;
+            text-transform: uppercase;
+            height: 100%;
+        }
+    }
+
+    &__basket-img{
+        width: 1.125rem;
+        height: 1.125rem;
     }
 
 

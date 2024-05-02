@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const FileManagerPlugin = require('filemanager-webpack-plugin');
 
 module.exports = (env, argv) => {
   const mode = argv.mode || 'development';
@@ -29,7 +30,7 @@ module.exports = (env, argv) => {
             },
         },
         {
-          test: /\.(jpg|png|svg|jpeg|gif)$/i,
+          test: /\.(jpg|png|svg|jpeg|gif|svg)$/i,
           type: 'asset/resource',
         },
         {
@@ -50,6 +51,21 @@ module.exports = (env, argv) => {
         template: path.resolve(__dirname, 'src/front.pug'),
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
         filename: 'index.html',
+      }),
+      new FileManagerPlugin({
+        events: {
+            onStart: {
+                delete: ['dist'],
+            },
+            onEnd: {
+                copy: [
+                    {
+                        source: path.join(__dirname, 'src/assets/img/svg'),
+                        destination: path.join(__dirname, 'dist/assets/img/svg'),
+                    },
+                ],
+            },
+        },
       }),
     ],
     output: {
