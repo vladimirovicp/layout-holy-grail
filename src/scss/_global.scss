@@ -44,9 +44,9 @@ ul, li{
     list-style: none;
 }
 
-
-
-
+.container {
+    width: 100%;
+}
 
 .img-full{
     width: 100%;
@@ -60,5 +60,10 @@ ul, li{
 @media(min-width: 90em){
     html{
         font-size: 16px;
+    }
+
+    .container {
+        width: 90rem;
+        margin: 0 auto;
     }
 }

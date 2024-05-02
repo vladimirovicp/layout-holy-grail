@@ -1,5 +1,27 @@
 .footer{
     background-color: #000;
     color: #fff;
-    height: 7.5rem;
+    
+    .container{
+        display: flex;
+        height: 7.5rem;
+        align-items: center;
+
+        &::after{
+            flex: 1;
+            content: '';
+        }
+
+    }
+
+    &__logo{
+        width: 4.8rem;
+        height: auto;
+    }
+
+    &__info{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+    }
 }

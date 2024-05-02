@@ -1,5 +1,8 @@
 include ../mixins/media
 
-footer.footer dfgdfgfd
-    //img(src=require(`./assets/img/svg/logo.svg`))
-    +mediaSvg('logo', 'header__logo')
+footer.footer
+    .container
+        .footer__logo
+            //+mediaSvg('logo', 'header__logo')
+            img(src=require(`./assets/img/svg/logo.svg`) class='img-full' alt='Логотип')
+        .footer__info © 2024  Holy Grail
