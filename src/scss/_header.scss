@@ -25,18 +25,6 @@
         }
     }
 
-    &__menu{
-        // display: flex;
-        // flex-grow: 1;
-        // justify-content: space-between;
-
-        // &:before{
-        //     flex: 1;
-        //     content: "";
-        // }
-
-    }
-
     &__nav{
         display: flex;
         align-items: center;
@@ -56,7 +44,6 @@
     &__links{
 
         &-list{
-            //flex: 1;
             display: flex;
             justify-content: flex-end;
             gap: 1.5rem;
@@ -223,13 +210,16 @@
                 width: 2rem;
                 height: 2rem;
                 border-radius: 50%;
-                //background: radial-gradient(#BA8554, #A14F03);
                 background: #fff;
                 position: fixed;
                 left: 2rem;
                 top: 3.5rem;
                 z-index: 100;
                 transition: all 0.7s;
+            }
+
+            &-link{
+                font-size: 1.8rem;
             }
         }
 
@@ -268,7 +258,6 @@
 
         .container{
             height: 4.2rem;
-            //justify-content:space-between;
             flex: 1;
         }
 
