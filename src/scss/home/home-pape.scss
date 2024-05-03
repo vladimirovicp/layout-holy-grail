@@ -26,12 +26,6 @@
     }
 
     &__title{
-
-        position: absolute;
-        top: 16rem;
-        right: 1.8rem;
-        text-align: center;
-
         &-header{
             font-size: 4.5rem;
         }
@@ -39,5 +33,63 @@
         &-subheader{
             font-size: 2.25rem;
         }
+    }
+}
+
+@media(max-width: 64em){
+    .hero{
+        height: calc(100vh - 12rem - 7.5rem);
+        display: flex;
+        align-items: center;
+        text-align: center;
+
+        &__bg{
+            img{
+                object-position: 25% 16%;
+                object-fit: none;
+            }
+        }
+
+        &__title{
+            color: #fff;
+            &-header{
+                font-size: 3.4rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 64em){
+    .hero{
+        &__title{
+            position: absolute;
+            top: 16rem;
+            left: 50%;
+            text-align: center;
+            transform: translate(0, -50%);
+        } 
+
+        &-header{
+
+        }
+
+        &-subheader{
+
+        }
+    }
+
+}
+
+@media(max-width: 48em){
+    .hero{
+        height: calc(100vh - 8.5rem);
+       &__title{
+        &-header{
+            font-size: 1.5rem;
+        }
+        &-subheader{
+            font-size: 1rem;
+        }
+       }
     }
 }

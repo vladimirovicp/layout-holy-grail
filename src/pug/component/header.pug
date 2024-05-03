@@ -4,18 +4,21 @@ header.header
             .header__logo-img
                 img(src=require('../../pug/imagePaths.js').logo class='img-full' alt='logo')
             .header__logo-text Holy Grail
-        .header__menu
-            .menu__icon
-                span 
-            nav.header__nav
-                ul.header__nav-list
-                    li.header__nav-item
-                        a(href="/" class='header__nav-link active') home
-                    li.header__nav-item
-                        a(href="/" class='header__nav-link') catalog
-                    li.header__nav-item
-                        a(href="/" class='header__nav-link') about us
-                    .header__links
+        .header__content
+            .header__menu
+                input(type="checkbox" class="header__nav-toggle" id="nav-toggle")
+                label(for="nav-toggle" class="header__nav-button")
+                    span.header__nav-ico
+                .header__nav-background
+                nav.header__nav
+                    ul.header__nav-list
+                        li.header__nav-item
+                            a(href="/" class='header__nav-link active') home
+                        li.header__nav-item
+                            a(href="/" class='header__nav-link') catalog
+                        li.header__nav-item
+                            a(href="/" class='header__nav-link') about us
+                        .header__links
 
             ul.header__links-list
                 li.header__links-item

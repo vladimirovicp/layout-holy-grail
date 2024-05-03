@@ -10,6 +10,7 @@
 html {
     font-family: 'Roboto', sans-serif;
     line-height: 2.5;
+    font-size: 1.1vw;
     scroll-behavior: smooth;
 }
 
@@ -92,6 +93,26 @@ ul, li{
 
 
 
+@media(max-width: 64em){
+    html{
+        font-size: 2vw;
+    }
+    .main{
+        min-height: calc(100vh - 12rem - 7.5rem);
+    }
+}
+
+@media(max-width: 48em){
+    html{
+        font-size: 5vw;
+    }
+}
+
+@media(max-width: 20em){
+    html{
+        font-size: 16px;
+    }
+}
 
 
 @media(min-width: 90em){
@@ -103,8 +124,4 @@ ul, li{
         width: 90rem;
         margin: 0 auto;
     }
-}
-
-@media(max-width: 48em){
-    
 }
