@@ -1,7 +1,7 @@
 .hero{
     position: relative;
     width: 100%;
-    height: calc(100vh - 11.7rem);
+    height: calc(100vh - 4.2rem);
     display: block;
 
     .container{
@@ -34,7 +34,7 @@
 
 @media(max-width: 64em){
     .hero{
-        height: calc(100vh - 12rem - 7.5rem);
+        height: calc(100vh - 9rem);
         display: flex;
         align-items: center;
         text-align: center;
@@ -42,7 +42,8 @@
         &__bg{
             img{
                 object-position: 25% 16%;
-                object-fit: none;
+                object-fit: cover;
+                filter: brightness(60%);
             }
         }
 
@@ -57,12 +58,20 @@
 
 @media(min-width: 64em){
     .hero{
+        .container{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 100%;
+        }
+
         &__title{
-            position: absolute;
-            top: 16rem;
-            left: 50%;
+            justify-content: flex-end;
             text-align: center;
-            transform: translate(0, -50%);
+            width: 50%;
+            flex-direction: column;
+
+            display: flex;
         } 
     }
 
@@ -70,7 +79,7 @@
 
 @media(max-width: 48em){
     .hero{
-        height: calc(100vh - 8.5rem);
+        height: calc(100vh - 5rem);
        &__title{
         &-header{
             font-size: 1.5rem;

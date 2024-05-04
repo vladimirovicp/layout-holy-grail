@@ -63,9 +63,6 @@ a{
 
 }
 
-
-
-
 p{
     margin: 0 0 1rem 0;
 }
@@ -91,6 +88,16 @@ ul, li{
     object-fit: contain;
 }
 
+.form{
+    &__title{
+        &-logo{
+            width: 2.18rem;
+            height: 1.125rem;
+            display: block;
+        }
+    }
+}
+
 
 
 @media(max-width: 64em){
@@ -98,13 +105,17 @@ ul, li{
         font-size: 2vw;
     }
     .main{
-        min-height: calc(100vh - 12rem - 7.5rem);
+        min-height: calc(100vh - 9rem - 4.5rem);
     }
 }
 
 @media(max-width: 48em){
     html{
         font-size: 5vw;
+    }
+
+    .main{
+        min-height: calc(100vh - 7.5rem);
     }
 }
 

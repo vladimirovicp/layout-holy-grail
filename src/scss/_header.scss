@@ -75,25 +75,22 @@
             padding: 0;
         }
 
+        &__logo{
+            width: 100%;
+            height: 4.5rem;
+            background-color: #1C1403;
+            color: #fff;
+            justify-content: center;
+        }
+
         &__content{
             box-sizing: border-box;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            height: 6rem;
+            height: 4.5rem;
             width: 100%;
             padding: 0 2rem;
-        }
-
-        &__logo{
-            width: 100%;
-            height: 6rem;
-            background-color: #1C1403;
-            color: #fff;
-            justify-content: center;
-        }
-        &__menu{
-            
         }
     }
 }
@@ -105,11 +102,11 @@
 @media(max-width: 48em){
     .header{
         &__content{
-            height: 3rem;
+            height: 2.5rem;
         }
 
         &__logo{
-            height: 3rem;
+            height: 2.5rem;
         }
 
 
@@ -165,6 +162,7 @@
 
                 &:checked ~ .header__nav-background{
                     transform: scale(80);
+                    background: #fff;
                 }
             }
 
@@ -210,12 +208,12 @@
                 width: 2rem;
                 height: 2rem;
                 border-radius: 50%;
-                background: #fff;
+                background: transparent;
                 position: fixed;
                 left: 2rem;
-                top: 3.5rem;
+                top: 2.8rem;
                 z-index: 100;
-                transition: all 0.7s;
+                transition: transform 0.7s, background-color 0s ease-in, background-color 0.7s ease-out;
             }
 
             &-link{
