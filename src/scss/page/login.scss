@@ -41,7 +41,8 @@
 
     &__field{
         margin-bottom: 1.5rem;
-        input[type="text"], 
+        input[type="text"],
+        input:not([type]),
         input[type="email"], 
         input[type="password"]{
             width: 100%;
@@ -152,6 +153,7 @@
         &__field{
             margin-bottom: 0.5rem;
             input[type="text"], 
+            input:not([type]),
             input[type="email"], 
             input[type="password"]{
                 height: 2rem;
