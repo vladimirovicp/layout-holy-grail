@@ -88,16 +88,6 @@ ul, li{
     object-fit: contain;
 }
 
-.form{
-    &__title{
-        &-logo{
-            width: 2.18rem;
-            height: 1.125rem;
-            display: block;
-        }
-    }
-}
-
 
 
 @media(max-width: 64em){

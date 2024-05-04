@@ -5,4 +5,5 @@ import "./scss/_global.scss";
 import "./scss/_header.scss";
 import "./scss/_footer.scss";
 
-import "./scss/home/home-pape.scss";
+import "./scss/page/home.scss";
+import "./scss/page/login.scss";

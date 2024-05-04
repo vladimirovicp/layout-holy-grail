@@ -2,7 +2,7 @@ extends pug/layout/main
 block variables_layout
     -
         let title = 'login'
-        let curPage = '/login';
+        let curPage = '/login-error';
 
 block content
     main.main.login-page 
@@ -12,18 +12,18 @@ block content
                     span.form__title-logo 
                         img(src=require('./pug/imagePaths.js').logo class='img-full' alt='logo')
                     span.form__title-text Holy Grail
-                .form__message
+                .form__message Invalid password or email
                 form(action="#" class="form__login")
                     .form__field
                         input(type="email" placeholder="Enter your email" required)
-                        span
+                        span Invalid email address format
                     .form__field
                         .form__field-eye
-                            input(type="password" class="password" placeholder="Enter your password" required)
+                            input(type="text" class="password" placeholder="Enter your password" required)
                             .eye
-                        span
+                        span Password too short. Use at least 6 characters.
                     .form__field.form__button
-                        input(type="button" value="Login")
+                        input(type="button" value="Login" disabled)
                 .form__link
                     a(href="#") Register
 
