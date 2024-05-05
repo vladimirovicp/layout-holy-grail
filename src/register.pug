@@ -8,6 +8,10 @@ block content
     main.main.register-page 
         .container
             .form.register__box
+                .form__title
+                    span.form__title-logo 
+                        img(src=require('./pug/imagePaths.js').logo class='img-full' alt='logo')
+                    span.form__title-text Register
                 .form__message
                 form(action="#" class="form__register")
                     .form__fields-title Personal info
@@ -28,9 +32,11 @@ block content
                     .form__fields-title Address
                     .form__fields-sub-title Shipping adress
                     .form__fields 
-                        .form__field
-                            input(type="text" placeholder="country" required)
-                            span
+                        .form__field.field__country
+                            select
+                                option(selected disabled hidden) Country
+                                option(value="Option 3") Option 3
+                                option(value="Option 1") Option 1
                         .form__field
                             input(type="text" placeholder="city" required)
                             span
@@ -46,15 +52,15 @@ block content
                             label(for="check-address") Set as default address
                             span
                     .form__fields-sub-title Choose password
-                    .form__field
+                    .form__field.field__password
                         .form__field-eye
                             input(type="password" class="password" placeholder="Enter your password" required)
                             .eye
                         span
-                        .form__field
-                            input(type="checkbox" id="agree" required)
-                            label(for="agree") Agree нужно посмотреть, что писать
-                            span
+                    .form__field
+                        input(type="checkbox" id="agree" required)
+                        label(for="agree") Agree нужно ли?
+                        span
                     .form__field.form__button
                         input(type="button" value="Register")
                 .form__link

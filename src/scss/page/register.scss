@@ -4,6 +4,7 @@
         padding: 3rem 2rem;
         width: 40rem;
         border-radius: 2rem;
+        margin-bottom: 2rem;
     }
     &-page{
         display: flex;
@@ -43,5 +44,29 @@
 
 
     }
+
+}
+
+
+@media (max-width: 48em) {
+    .register{
+        &__box{
+            padding: 1rem 1rem;
+            width: 100%;
+        }
+    }
+
+    .register-page{
+        .form{
+            &__field{
+                width: 100%;
+            }
+
+            &__fields{
+                flex-direction: column;
+            }
+        }
+    }
+
 
 }
