@@ -53,6 +53,12 @@ module.exports = (env, argv) => {
         filename: 'index.html',
       }),
       new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/front.pug'),
+        favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
+        filename: 'home/index.html',
+      }),
+      
+      new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'src/login.pug'),
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
         filename: 'login/index.html',
@@ -60,7 +66,12 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'src/login-error.pug'),
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
-        filename: 'login/error/index.html',
+        filename: 'login-error/index.html',
+      }),
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/register.pug'),
+        favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
+        filename: 'register/index.html',
       }),
       new FileManagerPlugin({
         events: {
