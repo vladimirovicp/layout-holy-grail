@@ -88,6 +88,126 @@ ul, li{
     object-fit: contain;
 }
 
+.form{
+    &__title{
+
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        &-logo{
+            width: 2.18rem;
+            height: 1.125rem;
+            display: inline-block;
+            margin-right: 0.5rem;
+        }
+        &-text{
+            color:#fff;
+            text-transform: uppercase;
+        }
+    }
+
+    &__message{
+        color: #FF2E00;
+        margin-bottom: .5rem;
+    }
+
+    &__field{
+        margin-bottom: 1.5rem;
+        input[type="text"],
+        input:not([type]),
+        input[type="email"], 
+        input[type="password"],
+        input[type="date"]{
+            width: 100%;
+            height: 3.5rem;
+            border-radius:10rem;
+            color: #fff;
+            background-color: transparent;
+            box-sizing:border-box;
+            padding: 0 1.2rem;
+            outline-style: solid;
+            outline-offset: 0;
+            outline-width: 0;
+            transition: all .7s;
+            &:focus-visible{
+                border-color: #fff;
+            }
+        }
+
+        input[type="button"]{
+            border-radius:10rem;
+            width: 100%;
+            height: 3.5rem;
+            
+            border: .3rem solid #8E8A81;
+            background-color: #8E8A81;
+            
+            
+            transition: background-color .7s;
+            font-weight: 600;
+
+            &:not([disabled]){
+                cursor: pointer;
+                border-color: #FDAD11;
+                background-color: #F1CF8E;
+                &:hover{
+                    background-color: #FDAD11;
+                }
+            } 
+        }
+
+        &-eye{
+            position: relative;
+
+            .eye{
+                cursor: pointer;
+                width: 3.5rem;
+                height: 3.5rem;
+                position: absolute;
+                background-image: url(../assets/img/svg/eye-show-solid.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                top:0;
+                right: 0;
+            }
+
+            input[type="text"] + .eye, input:not([type]) + .eye{
+                background-image: url(../assets/img/svg/eye-close-line.svg);
+            }
+
+
+        }
+
+        &-error{
+            input[type="text"], 
+            input[type="email"], 
+            input[type="password"]{
+                border: .3rem solid #FF2E00;
+            }
+        }
+
+        span{
+            display: block;
+            padding: .5rem;
+            color: #FF2E00; 
+        }
+    }
+
+    &__link{
+        text-align: center;
+        a{
+            color: #F1CF8E;
+            transition: all .7s;
+            text-decoration: underline;
+            
+            &:hover{
+                font-size: 1.05rem;
+            }
+        }
+        
+    }
+}
+
 
 
 @media(max-width: 64em){
@@ -106,6 +226,48 @@ ul, li{
 
     .main{
         min-height: calc(100vh - 7.5rem);
+    }
+
+    .form{
+        font-size: 0.4rem;
+        &__title{
+            margin-bottom:0.5rem 
+        }
+
+        &__field{
+            margin-bottom: 0.5rem;
+            input[type="text"], 
+            input:not([type]),
+            input[type="email"], 
+            input[type="password"],
+            input[type="date"]
+            {
+                height: 2rem;
+                border-width: .1rem 
+            }
+
+            input[type="button"]{
+                height: 1.5rem;
+                border-width: .1rem 
+            }
+
+            &-eye{
+                .eye{
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+        }
+
+        &__link{
+            margin-top: 1rem;
+            font-size: .6rem;
+            a{
+                &:hover{
+                    font-size: .7rem;
+                }
+            }
+        }
     }
 }
 

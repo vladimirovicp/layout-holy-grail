@@ -7,6 +7,62 @@ block variables_layout
 block content
     main.main.register-page 
         .container
-            .form.register__box register
+            .form.register__box
+                .form__message
+                form(action="#" class="form__register")
+                    .form__fields-title Personal info
+                    .form__field
+                        input(type="email" placeholder="Enter your email" required)
+                        span
+                    .form__fields  
+                        .form__field
+                            input(type="text" placeholder="First name" required)
+                            span
+                      
+                        .form__field
+                            input(type="text" placeholder="Last name" required)
+                            span
+                    .form__field.field__birth-date
+                        input(type="text" placeholder="Birth date" required)
+                        span
+                    .form__fields-title Address
+                    .form__fields-sub-title Shipping adress
+                    .form__fields 
+                        .form__field
+                            input(type="text" placeholder="country" required)
+                            span
+                        .form__field
+                            input(type="text" placeholder="city" required)
+                            span
+                    .form__fields 
+                        .form__field
+                            input(type="text" placeholder="street" required)
+                            span
+                        .form__field
+                            input(type="text" placeholder="postal code" required)
+                            span
+                    .form__field
+                            input(type="checkbox" id="check-address")
+                            label(for="check-address") Set as default address
+                            span
+                    .form__fields-sub-title Choose password
+                    .form__field
+                        .form__field-eye
+                            input(type="password" class="password" placeholder="Enter your password" required)
+                            .eye
+                        span
+                        .form__field
+                            input(type="checkbox" id="agree" required)
+                            label(for="agree") Agree нужно посмотреть, что писать
+                            span
+                    .form__field.form__button
+                        input(type="button" value="Register")
+                .form__link
+                    a(href="/layout-holy-grail/login") LogIn
+
+                    
+
+
+                        
 
         

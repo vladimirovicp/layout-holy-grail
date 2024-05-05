@@ -7,3 +7,7 @@ import "./scss/_footer.scss";
 
 import "./scss/page/home.scss";
 import "./scss/page/login.scss";
+import "./scss/page/register.scss";
+
+
+import "./assets/js/script.js"
