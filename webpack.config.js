@@ -55,12 +55,12 @@ module.exports = (env, argv) => {
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'src/login.pug'),
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
-        filename: 'login.html',
+        filename: 'login/index.html',
       }),
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, 'src/login-error.pug'),
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
-        filename: 'login-error.html',
+        filename: 'login/error/index.html',
       }),
       new FileManagerPlugin({
         events: {
