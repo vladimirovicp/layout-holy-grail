@@ -17,18 +17,18 @@ block content
                     .form__fields-title Personal info
                     .form__field
                         input(type="email" placeholder="Enter your email" required)
-                        span
+                        span не верно заполен
                     .form__fields  
                         .form__field
                             input(type="text" placeholder="First name" required)
-                            span
+                            span не верно заполен
                       
                         .form__field
                             input(type="text" placeholder="Last name" required)
-                            span
+                            span не верно заполен
                     .form__field.field__birth-date
                         input(type="text" placeholder="Birth date" required)
-                        span
+                        span не верно заполен
                     .form__fields-title Address
                     .form__fields-sub-title Shipping adress
                     .form__fields 
@@ -37,30 +37,30 @@ block content
                                 option(selected disabled hidden) Country
                                 option(value="Option 3") Option 3
                                 option(value="Option 1") Option 1
-                            span
+                            span не верно заполен
                         .form__field
                             input(type="text" placeholder="city" required)
-                            span
+                            span не верно заполен
                     .form__fields 
                         .form__field
                             input(type="text" placeholder="street" required)
-                            span
+                            span не верно заполен
                         .form__field
                             input(type="text" placeholder="postal code" required)
-                            span
+                            span не верно заполен
                     .form__field
-                            input(type="checkbox" id="check-address")
-                            label(for="check-address") Set as default address
+                        input(type="checkbox" id="check-address")
+                        label(for="check-address") Set as default address
                     .form__fields-sub-title Choose password
                     .form__field.field__password
                         .form__field-eye
                             input(type="password" class="password" placeholder="Enter your password" required)
                             .eye
-                        span
+                        span не верно заполен
                     .form__field
                         input(type="checkbox" id="agree" required)
                         label(for="agree") Agree нужно ли?
-                        span
+                        span Согласие обязательно
                     .form__field.form__button
                         input(type="button" value="Register")
                 .form__link

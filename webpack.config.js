@@ -73,6 +73,13 @@ module.exports = (env, argv) => {
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
         filename: 'register/index.html',
       }),
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/register-error.pug'),
+        favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
+        filename: 'register-error/index.html',
+      }),
+
+      
       new FileManagerPlugin({
         events: {
             onStart: {
