@@ -1,0 +1,16 @@
+extends pug/layout/main
+block variables_layout
+    -
+        let title = 'not-found'
+        let curPage = '/not-found';
+
+block content
+    main.main.not-found-page
+        .container
+            .not-found__logo
+                .not-found__logo-el
+                    img(src=require(`./assets/img/svg/4.svg`) class='img-full' alt='')
+                .not-found__logo-el
+                    img(src=require(`./assets/img/svg/wheel.svg`) class='img-full' alt='')
+                .not-found__logo-el
+                    img(src=require(`./assets/img/svg/4.svg`) class='img-full' alt='')

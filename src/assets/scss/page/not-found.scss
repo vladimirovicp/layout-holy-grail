@@ -1,0 +1,12 @@
+.not-found{
+    &__logo{
+        width: 22rem;
+        height: 8.4rem;
+        display: flex;
+        justify-content: space-between;
+
+        &-el{
+            width: 5.5rem;
+        }
+    }
+}
