@@ -71,3 +71,80 @@ if(registerBox){
 
     
 }
+
+
+const modals = document.querySelectorAll('.modal');
+if(modals){
+    document.onclick = function (e) {
+        if(e.target.className == "_lock"){
+    
+            modals.forEach(el => {
+                if (el.classList.contains('active')){
+                    el.classList.remove('active');
+                    document.body.classList.remove('_lock');
+                }
+            })
+        }
+    };
+}
+
+
+
+// modal error
+const openModalError = document.querySelector('.open-modal__error');
+if(openModalError){
+    openModalError.addEventListener('click',()=>{
+        const modalError = document.querySelector('.modal__error');
+        modalError.classList.add('active');
+        document.body.classList.add('_lock');
+    });
+
+    const closeModalError = document.querySelector('.modal__close-error');
+    closeModalError.addEventListener('click', () =>{
+        const modalError = document.querySelector('.modal__error');
+        modalError.classList.remove('active');
+        document.body.classList.remove('_lock');
+    });
+}
+// end modal error
+
+
+// modal info
+const openModalInfo = document.querySelector('.open-modal__info');
+const modalInfo = document.querySelector('.modal__info');
+if(openModalInfo && modalInfo){
+    openModalInfo.addEventListener('click',()=>{
+        modalInfo.classList.add('active');
+        document.body.classList.add('_lock');
+    })
+    
+    const closeModalInfoNormal = document.querySelector('.modal-close__info');
+    closeModalInfoNormal.addEventListener('click', () =>{
+        modalInfo.classList.remove('active');
+        document.body.classList.remove('_lock');
+    })
+
+}
+
+// end modal info
+
+
+
+// modal standart
+const openModalStandart = document.querySelector('.open-modal__standart');
+const modalStandart = document.querySelector('.modal__standart');
+if(openModalStandart && modalStandart){
+    openModalStandart.addEventListener('click',()=>{
+        modalStandart.classList.add('active');
+        document.body.classList.add('_lock');
+    });
+
+    const closeModalStandart = document.querySelector('.modal-close__standart');
+    closeModalStandart.addEventListener('click', () =>{
+        modalStandart.classList.remove('active');
+        document.body.classList.remove('_lock');
+    });
+}
+// end modal error
+
+

@@ -83,6 +83,11 @@ module.exports = (env, argv) => {
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
         filename: 'not-found/index.html',
       }),
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/modal.pug'),
+        favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
+        filename: 'modal/index.html',
+      }),
 
       
 
@@ -113,7 +118,7 @@ module.exports = (env, argv) => {
     devServer: {
       static: path.join(__dirname, 'src'),
       compress: true,
-      port: 9000,
+      //port: 9000,
       open: true,
     },
   };

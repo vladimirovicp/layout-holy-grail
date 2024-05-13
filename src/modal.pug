@@ -1,0 +1,35 @@
+extends pug/layout/main
+block variables_layout
+    -
+        let title = 'Главная'
+        let curPage = '/';
+
+block content
+    main.main.home-pape
+        sectoion.hero 
+            .hero__bg
+                img(src=require(`./assets/img/home-background-min.png`) alt='hero')
+            .container
+                .hero__title
+                    .hero__title-header Welcome to Holy Grail 
+                    .hero__title-subheader Bikes and Electric Bikes
+                    a(href="#" class='open-modal open-modal__error') modal1 info error
+                    a(href="#" class='open-modal open-modal__info') modal1 info normal
+                    a(href="#" class='open-modal open-modal__standart') modal1 info standart
+
+    .modal.modal__error
+        span.modal__close.modal__close-error
+        .modal__content the changes are not saved
+            span.modal-icon
+
+    .modal.modal__info
+        span.modal__close.modal-close__info
+        .modal__content the changes are saved
+            span.modal-icon
+
+    .modal.modal__standart
+        span.modal__close.modal-close__standart
+        .modal__content change the default Address?
+        .modal__btn-box
+            button.modal__btn ok
+        

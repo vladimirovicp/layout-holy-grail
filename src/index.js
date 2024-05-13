@@ -10,4 +10,6 @@ import "./assets/scss/page/login.scss";
 import "./assets/scss/page/register.scss";
 import "./assets/scss/page/not-found.scss";
 
+import "./assets/scss/_modal.scss"
+
 import "./assets/js/script.js"
