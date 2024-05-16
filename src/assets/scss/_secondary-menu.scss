@@ -1,0 +1,17 @@
+.secondary-menu{
+    background-color: #F1CF8E;
+    .container{
+        height: 2rem;
+        display: flex;
+        align-items: center;
+    }
+}
+
+
+@media(min-width: 64em){
+    .secondary-menu{
+        .container{
+            height: 2.5rem;
+        } 
+    }  
+}

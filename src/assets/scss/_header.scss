@@ -253,6 +253,10 @@
 
 @media(min-width: 64em){
     .header{
+        &__top{
+            background-color: #1C1403;
+            height: 2rem;
+        }
 
         .container{
             height: 4.2rem;
@@ -286,7 +290,15 @@
                 height: 100%;
             }
         }
+
+        &__bottom{
+            .container{
+                height: 2rem;
+            }
+        }
     }
+
+
 }
 
 

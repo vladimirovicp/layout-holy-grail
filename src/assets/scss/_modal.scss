@@ -9,6 +9,7 @@
     background-color: #1C1403;
     color: #fff;
     padding: 3.5rem 1.6rem 1.5rem 1.6rem;
+    border: 1px solid #fff;
 
     &.active{
         top: 50%;
@@ -32,6 +33,7 @@
     &__error{
         padding: 3.5rem 5rem 2.5rem 1.6rem;
         color: #FF2E00;
+        border: 1px solid #FF2E00;
         .modal-icon{
             background-image: url('../img/svg/icon-error.svg');
         }
@@ -39,7 +41,8 @@
 
     &__info{
         padding: 3.5rem 5rem 2.5rem 1.6rem;
-        color: #7AC500; ;
+        color: #7AC500;
+        border: 1px solid #7AC500;
         .modal-icon{
             width: 2.5rem;
             height: 2.5rem;
