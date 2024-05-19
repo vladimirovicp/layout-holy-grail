@@ -106,6 +106,18 @@ ul, li{
     object-fit: contain;
 }
 
+.btn{
+    &-default{
+        border-radius: 10rem;
+        width: 100%;
+        height: 3.5rem;
+        font-weight: 600;
+        //border-color: #FDAD11;
+        border: .2rem solid #FDAD11;
+        background-color: #F1CF8E;
+    }
+}
+
 .form{
     &__title{
 
@@ -230,10 +242,6 @@ ul, li{
             color: #F1CF8E;
             transition: all .7s;
             text-decoration: underline;
-            
-            /* &:hover{
-                font-size: 1.05rem;
-            } */
         }
         
     }
@@ -354,5 +362,18 @@ ul, li{
         width: 90rem;
         max-width: 100%;
         margin: 0 auto;
+    }
+}
+
+@media (hover: hover) {
+   
+    .btn{
+        &-default{
+            cursor: pointer;
+            transition: background-color 0.7s;
+            &:hover{
+                background-color: #FDAD11; 
+            }
+        }
     }
 }

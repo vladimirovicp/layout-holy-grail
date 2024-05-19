@@ -5,4 +5,17 @@ block variables_layout
         let curPage = '/catalog';
 
 block content
-    main.main.catalog-page 
+    main.main.catalog-page
+        .container
+            .catalog-cards
+                - for (var i = 0; i < 10; ++i) {
+                    .catalog-card 
+                        .catalog-card__img
+                            img(src="./assets/img/catalog/1.png" alt="?" class="img-full")
+                        .catalog-card__price
+                            .catalog-card__price-current $ 3 447
+                            .catalog-card__price-old $ 5 324
+                        .catalog-card__title Merida Big Seven 10MD Hardtail Mountain Bike Race Red/White
+                        .catalog-card__btn
+                            button.btn-default Into a basket
+                - }
