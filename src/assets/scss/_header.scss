@@ -66,6 +66,8 @@
         width: 1.125rem;
         height: 1.125rem;
     }
+
+    
 }
 
 @media(max-width: 64em){
@@ -253,11 +255,7 @@
 
 @media(min-width: 64em){
     .header{
-        &__top{
-            background-color: #1C1403;
-            height: 2rem;
-        }
-
+        border-top: 2rem solid #1C1403;
         .container{
             height: 4.2rem;
             flex: 1;

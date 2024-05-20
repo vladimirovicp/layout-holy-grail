@@ -4,6 +4,49 @@
         height: 2rem;
         display: flex;
         align-items: center;
+        justify-content: space-between;
+    }
+
+    &__breadcrumbs{
+
+    }
+
+    &__search{
+        position: relative;
+        display: flex;
+        input{
+            overflow: hidden;
+            background-color: #f4d9a5;
+            border: 1px solid #FFA800;
+            border-radius: 10px;
+            padding-left: 1rem;
+        }
+        button{
+            position: absolute;
+            top:-1px;
+            right: -1px;
+            background-color: #FFA800;
+            border: 0;
+            font-size: 0;
+            width: 2.3rem;
+            height: 1.3rem;
+            display: block;
+            border-radius: 10px;
+            background-image: url('../img/svg/search.svg');
+           //background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            cursor: pointer;
+
+        }
+    }
+
+    &__nav{
+        display: flex;
+    }
+
+    &__sort{
+        display: flex;
     }
 }
 
