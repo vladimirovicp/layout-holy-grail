@@ -43,11 +43,22 @@
 
     &__nav{
         display: flex;
+        position: relative;
     }
 
     &__sort{
         display: flex;
     }
+
+    &__filter{
+        &-box{
+            position: absolute;
+            background-color:green;
+            top: 2rem;
+        }
+    }
+
+    
 }
 
 
