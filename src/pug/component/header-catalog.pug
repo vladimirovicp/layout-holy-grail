@@ -38,8 +38,11 @@ header.header
         .secondary-menu__nav
             .secondary-menu__sort
                 .secondary-menu__sort-text Sort by:
-                button.secondary-menu__sort-btn Best selling 
-            button.secondary-menu__filter Filter
+                button.secondary-menu__sort-btn Best selling
+            .secondary-menu__filter
+                input(type="checkbox" class="header__filter-toggle" id="filter-toggle")
+                label(for="filter-toggle" class="secondary-menu__filter-button") 
+                    span.secondary-menu__filter-btn Filter
 
             .secondary-menu__filter-box
                 .secondary-menu__filter-title FILTER

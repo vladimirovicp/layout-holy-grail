@@ -61,18 +61,19 @@
     }
 
     &__filter{
-        background-color: #FFA800;
-        border: 1px solid #FFA800;
-        font-weight: 700;
-        padding: 0 .4rem;
-        border-radius:2rem;
-        cursor: pointer;
-        transition: background-color 1s;
-
-        &:hover{
-            background-color: #fff;
+        &-btn{
+            background-color: #FFA800;
+            border: 1px solid #FFA800;
+            font-weight: 700;
+            padding: 0 .4rem;
+            border-radius:2rem;
+            cursor: pointer;
+            transition: background-color 1s;
+    
+            &:hover{
+                background-color: #fff;
+            }
         }
-
 
         &-box{
             padding: 2rem 1rem;
