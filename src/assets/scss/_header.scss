@@ -20,12 +20,11 @@
     }
 
     &__nav{
-        &-toggle{
-        display: none; 
-        }
-    }
 
-    &__nav{
+        &-toggle{
+            display: none; 
+            }
+
         display: flex;
         align-items: center;
         &-list{

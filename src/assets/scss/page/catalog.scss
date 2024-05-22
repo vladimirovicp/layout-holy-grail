@@ -26,6 +26,7 @@
             overflow: hidden;
             position: relative;
             margin-bottom: .5rem;
+            cursor: pointer;
         }
 
         &__price{
@@ -57,6 +58,7 @@
         &__title{
             padding-bottom: .5rem;
             padding-left: 1rem;
+            cursor: pointer;
         }
 
         &__btn{

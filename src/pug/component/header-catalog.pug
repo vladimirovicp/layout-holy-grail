@@ -31,73 +31,94 @@ header.header
                             img(src=require('../../pug/imagePaths.js').basket class='img-full' alt='Basket')
 .secondary-menu
     .container
-        .secondary-menu__breadcrumbs Holy Grail / Catalog / Search product
+        .secondary-menu__breadcrumbs Home / Catalog
         .secondary-menu__search 
             input(type="search" placeholder="search")
             button Search
         .secondary-menu__nav
             .secondary-menu__sort
-                .secondary-menu__sort-text Sort by:
-                button.secondary-menu__sort-btn Best selling
+                input(type="checkbox" class="sort-toggle__input" id="sort-toggle")
+                label(for="sort-toggle" class="secondary-menu__sort-button") 
+                    .secondary-menu__sort-text Sort by:
+                    span.secondary-menu__sort-btn Best selling
+                .secondary-menu__sort-box 
+                    ul.sort__list
+                        li.sort-item
+                            .checkbox-with-text.active
+                                span.filter__decor
+                                span.filter__text Best selling
+                        li.sort-item
+                            .checkbox-with-text
+                                span.filter__decor
+                                span.filter__text Alphabetically, Z-A
+                        li.sort-item
+                            .checkbox-with-text
+                                span.filter__decor
+                                span.filter__text Price, low to high
+                        li.sort-item
+                            .checkbox-with-text
+                                span.filter__decor
+                                span.filter__text Price, high to low
+                        
+                
             .secondary-menu__filter
-                input(type="checkbox" class="header__filter-toggle" id="filter-toggle")
+                input(type="checkbox" class="filter-toggle__input" id="filter-toggle")
                 label(for="filter-toggle" class="secondary-menu__filter-button") 
                     span.secondary-menu__filter-btn Filter
-
-            .secondary-menu__filter-box
-                .secondary-menu__filter-title FILTER
-                .filter-box.filter-box__categoty
-                    .filter-box__title Category
-                    .filter-categoty__data
-                        ul.filter__list
-                            li.filter-item
-                                .checkbox-with-text.active
-                                    span.filter__decor
-                                    span.filter__text Bikes
-                            li.filter-item
-                                .checkbox-with-text
-                                    span.filter__decor
-                                    span.filter__text Electric Bikes
-                .filter-box.filter-box__size
-                    .filter-box__title Wheel size
-                    .filter-categoty__data
-                        ul.filter__list
-                            li.filter-item
-                                .checkbox-with-text.active
-                                    span.filter__decor
-                                    span.filter__text 12
-                            li.filter-item
-                                .checkbox-with-text
-                                    span.filter__decor
-                                    span.filter__text 14
-                            li.filter-item
-                                .checkbox-with-text.active
-                                    span.filter__decor
-                                    span.filter__text 16
-                            li.filter-item
-                                .checkbox-with-text
-                                    span.filter__decor
-                                    span.filter__text 20
-                .filter-box.filter-box__colour
-                    .filter-box__title Colour
-                    .filter-categoty__data
-                        ul.filter__list
-                            li.filter-item
-                                .checkbox-with-text.active
-                                    span.filter__decor
-                                    span.filter__text Black
-                            li.filter-item
-                                .checkbox-with-text
-                                    span.filter__decor
-                                    span.filter__text Blue
-                            li.filter-item
-                                .checkbox-with-text.active
-                                    span.filter__decor
-                                    span.filter__text Brown
-                            li.filter-item
-                                .checkbox-with-text
-                                    span.filter__decor
-                                    span.filter__text Charcoal
+                .secondary-menu__filter-box
+                    .secondary-menu__filter-title FILTER
+                    .filter-box.filter-box__categoty
+                        .filter-box__title Category
+                        .filter-categoty__data
+                            ul.filter__list
+                                li.filter-item
+                                    .checkbox-with-text.active
+                                        span.filter__decor
+                                        span.filter__text Bikes
+                                li.filter-item
+                                    .checkbox-with-text
+                                        span.filter__decor
+                                        span.filter__text Electric Bikes
+                    .filter-box.filter-box__size
+                        .filter-box__title Wheel size
+                        .filter-categoty__data
+                            ul.filter__list
+                                li.filter-item
+                                    .checkbox-with-text.active
+                                        span.filter__decor
+                                        span.filter__text 12
+                                li.filter-item
+                                    .checkbox-with-text
+                                        span.filter__decor
+                                        span.filter__text 14
+                                li.filter-item
+                                    .checkbox-with-text.active
+                                        span.filter__decor
+                                        span.filter__text 16
+                                li.filter-item
+                                    .checkbox-with-text
+                                        span.filter__decor
+                                        span.filter__text 20
+                    .filter-box.filter-box__colour
+                        .filter-box__title Colour
+                        .filter-categoty__data
+                            ul.filter__list
+                                li.filter-item
+                                    .checkbox-with-text.active
+                                        span.filter__decor
+                                        span.filter__text Black
+                                li.filter-item
+                                    .checkbox-with-text
+                                        span.filter__decor
+                                        span.filter__text Blue
+                                li.filter-item
+                                    .checkbox-with-text.active
+                                        span.filter__decor
+                                        span.filter__text Brown
+                                li.filter-item
+                                    .checkbox-with-text
+                                        span.filter__decor
+                                        span.filter__text Charcoal
 
 
 
