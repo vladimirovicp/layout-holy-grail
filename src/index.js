@@ -9,6 +9,7 @@ import "./assets/scss/_footer.scss";
 import "./assets/scss/page/home.scss";
 import "./assets/scss/page/login.scss";
 import "./assets/scss/page/register.scss";
+import "./assets/scss/page/account.scss";
 import "./assets/scss/page/not-found.scss";
 import "./assets/scss/page/catalog.scss";
 

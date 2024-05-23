@@ -1,0 +1,109 @@
+extends pug/layout/main
+block variables_layout
+    -
+        let title = 'account'
+        let curPage = '/account';
+block content
+    main.main.account-page
+        .container
+             .form.account__box
+                .form__title
+                    span.form__title-logo 
+                        img(src=require('./pug/imagePaths.js').logo class='img-full' alt='logo')
+                    span.form__title-text Account
+                .form__message
+                form(action="#" class="form__account")
+                    .form__fields-title Personal info
+                    .form__field
+                        .form__field-edit
+                        input(type="email" value="test@gmail.com" readonly)
+                        span
+                    .form__fields  
+                        .form__field
+                            .form__field-edit
+                            input(type="text" value="Test" disabled)
+                            span
+                      
+                        .form__field
+                            .form__field-edit
+                            input(type="text" value="Testov" disabled)
+                            span
+                    .form__field.field__birth-date
+                        .form__field-edit
+                        input(type="text" value="2004-05-23" readonly)
+                        span
+                    .form__fields-title Address
+                    .form__fields-sub-title Shipping adress
+                    .form__fields-group
+                        .form__field-edit
+                        .form__field-delete
+                        .form__fields
+                            .form__field.field__country
+                                select
+                                    option(value="USA") USA
+                                    option(value="Option 1") Option 1
+                                span
+                            .form__field
+                                input(type="text" placeholder="city" readonly)
+                                span
+                        .form__fields 
+                            .form__field
+                                input(type="text" placeholder="street" readonly)
+                                span
+                            .form__field
+                                input(type="text" placeholder="postal code" readonly)
+                                span
+                        .form__field
+                            input(type="radio" id="radio-address__shipping" name="radio-address__shipping" checked)
+                            label(for="radio-address__shipping") Set as default address
+
+                    .form__fields-group
+                        .form__field-edit
+                        .form__field-delete
+                        .form__fields
+                            .form__field.field__country
+                                select
+                                    option(value="Ru") Russian
+                                    option(value="Option 1") Option 1
+                                span
+                            .form__field
+                                input(type="text" placeholder="city" readonly)
+                                span
+                        .form__fields 
+                            .form__field
+                                input(type="text" placeholder="street" readonly)
+                                span
+                            .form__field
+                                input(type="text" placeholder="postal code" readonly)
+                                span
+                        .form__field
+                            input(type="radio" id="radio-address__shipping-2" name="radio-address__shipping")
+                            label(for="radio-address__shipping-2") Set as default address
+                    .form__field.form__button
+                        input(type="button" value="Add Shipping address")
+
+
+                    
+
+
+                    .form__fields-sub-title Ниже не смотрим, еще не реализованно
+
+
+
+                    .form__fields-sub-title Choose password
+
+
+                    .form__field.field__password
+                        .form__field-eye
+                            input(type="password" class="password" placeholder="Enter your password" required)
+                            .eye
+                        span
+                    .form__field.form__button
+                        input(type="button" value="Register")
+
+                    
+
+
+                        
+
+        
