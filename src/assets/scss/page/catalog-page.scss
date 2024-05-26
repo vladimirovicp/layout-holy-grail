@@ -7,6 +7,26 @@
     &__slider{
         width: 35rem;
         background-color: bisque;
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem 0;
+        
+        
+        .swiper{
+            &-carousel{
+                width: 6rem;
+                background-color:green;
+                
+
+                .swiper-wrapper{
+                    height: 28.75rem;
+                }
+            }
+
+            &-slider{
+
+            }
+        }
     }
 
     &__info{

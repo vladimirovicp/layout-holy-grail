@@ -48,3 +48,12 @@ import 'swiper/css/bundle';
       swiper: swiper,
     },
   });
+
+
+const swiperCarousel =  new Swiper(".swiper-carousel",{
+    direction: 'vertical',
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+});
