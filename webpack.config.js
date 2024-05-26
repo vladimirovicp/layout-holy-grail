@@ -38,7 +38,7 @@ module.exports = (env, argv) => {
           type: 'asset/resource',
         },
         {
-          test: /\.scss$/,
+          test: /\.(css|scss)$/,
           use: ['style-loader', 'css-loader', 'sass-loader'],
         },
       ],
@@ -102,6 +102,12 @@ module.exports = (env, argv) => {
         template: path.resolve(__dirname, 'src/catalog-page.pug'),
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
         filename: 'catalog/page/index.html',
+      }),
+
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/mySwipper.pug'),
+        favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
+        filename: 'swipper/index.html',
       }),
 
       

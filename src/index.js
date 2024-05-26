@@ -15,8 +15,12 @@ import "./assets/scss/page/catalog.scss";
 import "./assets/scss/page/catalog-page.scss";
 
 
-import "./assets/scss/_modal.scss";
 
+import "./assets/scss/_modal.scss";
 import "./assets/js/script.js";
+
+import "./assets/js/swiper.js";
+import "./assets/css/test.css";
+
 
 //import "../node_modules/swiper/swiper.scss";
