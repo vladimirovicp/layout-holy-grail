@@ -9,8 +9,10 @@ html(lang= 'en')
         title Consult Product — #{title}
         meta(content="width=device-width, initial-scale=1", name="viewport")
     body
-        if curPage === '/catalog' || curPage === '/account'
+        if curPage === '/catalog'
             include ../component/header-catalog
+        else if curPage === '/account'
+            include ../component/header-account
         else
             include ../component/header
         block content

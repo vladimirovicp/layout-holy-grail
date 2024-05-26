@@ -1,0 +1,46 @@
+header.header
+    .container
+        .header__logo
+            .header__logo-img
+                img(src=require('../../pug/imagePaths.js').logo class='img-full' alt='logo')
+            .header__logo-text Holy Grail
+        .header__content
+            .header__menu
+                input(type="checkbox" class="header__nav-toggle" id="nav-toggle")
+                label(for="nav-toggle" class="header__nav-button")
+                    span.header__nav-ico
+                .header__nav-background
+                nav.header__nav
+                    ul.header__nav-list
+                        li.header__nav-item
+                            a(href="/layout-holy-grail/" class='header__nav-link active') home
+                        li.header__nav-item
+                            a(href="/catalog" class='header__nav-link') catalog
+                        li.header__nav-item
+                            a(href="/" class='header__nav-link') about us
+                        .header__links
+
+            ul.header__links-list
+                li.header__links-item
+                    a(href="/account" class='header__links-link underline') account
+                li.header__links-item
+                    a(href="#" class='header__links-link underline') logout
+                li.header__links-item
+                    a(href="/" class='header__links-link')
+                        .header__basket-img
+                            img(src=require('../../pug/imagePaths.js').basket class='img-full' alt='Basket')
+.secondary-menu
+    .container
+        .secondary-menu__breadcrumbs Home / Account
+
+
+
+
+
+
+                
+            
+
+
+
+            

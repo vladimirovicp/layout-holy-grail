@@ -1,0 +1,21 @@
+extends pug/layout/main
+block variables_layout
+    -
+        let title = 'swiper'
+        let curPage = '/swiper';
+
+block content
+    main.main.catalog-page
+        .container page
+            .swiper-container
+                .swiper-wrapper
+                    .swiper-slide Slide 1
+                    .swiper-slide Slide 2
+                    .swiper-slide Slide 3
+            .swiper-pagination
+            <!-- If we need navigation buttons -->
+            .swiper-button-prev
+            .swiper-button-next
+
+            <!-- If we need scrollbar -->
+            .swiper-scrollbar
