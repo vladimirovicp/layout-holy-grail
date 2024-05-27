@@ -29,25 +29,25 @@ import 'swiper/css/bundle';
 //   });
 
 
-  var swiper = new Swiper(".mySwiper", {
-    direction: 'vertical',
-    loop: true,
-    spaceBetween: 10,
-    slidesPerView: 4,
-    freeMode: true,
-    watchSlidesProgress: true,
-  });
-  var swiper2 = new Swiper(".mySwiper2", {
-    loop: true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    thumbs: {
-      swiper: swiper,
-    },
-  });
+  // var swiper = new Swiper(".mySwiper", {
+  //   direction: 'vertical',
+  //   loop: true,
+  //   spaceBetween: 10,
+  //   slidesPerView: 4,
+  //   freeMode: true,
+  //   watchSlidesProgress: true,
+  // });
+  // var swiper2 = new Swiper(".mySwiper2", {
+  //   loop: true,
+  //   spaceBetween: 10,
+  //   navigation: {
+  //     nextEl: ".swiper-button-next",
+  //     prevEl: ".swiper-button-prev",
+  //   },
+  //   thumbs: {
+  //     swiper: swiper,
+  //   },
+  // });
 
 
 
@@ -61,14 +61,14 @@ const swiperCarousel =  new Swiper(".swiper-carousel",{
     watchSlidesProgress: true,
 });
 
-const swiperSlider2 = new Swiper(".swiper-mySlider", {
+const swiperSlider2 = new Swiper(".swiper-general", {
   loop: true,
   spaceBetween: 10,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
   thumbs: {
-    swiper: swiper,
+    swiper: swiperCarousel,
+  },
+  navigation: {
+    nextEl: ".swiper-general__button-next",
+    prevEl: ".swiper-general__button-prev",
   },
 });

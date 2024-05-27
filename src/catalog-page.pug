@@ -9,31 +9,34 @@ block content
         .container
             .catalog-page__slider 
 
-                .swiper.swiper-carousel(thumbsSlider="")
+                .swiper-carousel__wrapper
+                    .swiper.swiper-carousel(thumbsSlider="")
+                        .swiper-wrapper
+                            .swiper-slide
+                                img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            .swiper-slide 
+                                img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            .swiper-slide
+                                img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            .swiper-slide
+                                img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            .swiper-slide
+                                img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                    
+                    .swiper-general__button-prev
+                    .swiper-general__button-next
+                .swiper.swiper-general
                     .swiper-wrapper
                         .swiper-slide
-                            img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
                         .swiper-slide 
-                            img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
                         .swiper-slide
-                            img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
                         .swiper-slide
-                            img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
                         .swiper-slide
-                            img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //- .swiper-general
-                //-     .swiper.mySwiper2
-                //-         .swiper-wrapper
-                //-             .swiper-slide
-                //-                 img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-             .swiper-slide 
-                //-                 img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-             .swiper-slide
-                //-                 img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-             .swiper-slide
-                //-                 img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-             .swiper-slide
-                //-                 img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
 
                 //- .swiper.swiper-mySlider
                 //-     .swiper-wrapper
@@ -73,10 +76,10 @@ block content
                 //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
                 //-         .swiper-slide
                 //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                .swiper-pagination
+                //.swiper-pagination
                 <!-- If we need navigation buttons -->
-                .swiper-button-prev
-                .swiper-button-next
+                //- .swiper-button-prev
+                //- .swiper-button-next
 
             .catalog-page__info
                 .catalog-page__title Merida Big Seven 10MD Hardtail Mountain Bike Race Red/White
