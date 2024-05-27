@@ -10,21 +10,21 @@
         display: flex;
         justify-content: space-between;
         padding: 2rem 0;
-        
+        height: 28.75rem;
         
         .swiper{
             &-carousel{
                 width: 6rem;
                 background-color:green;
-                
+                margin: 0;
 
                 .swiper-wrapper{
-                    height: 28.75rem;
+                   
                 }
             }
 
-            &-slider{
-
+            &-general{
+                width: 25.5px;
             }
         }
     }

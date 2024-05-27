@@ -50,10 +50,25 @@ import 'swiper/css/bundle';
   });
 
 
+
+
+
 const swiperCarousel =  new Swiper(".swiper-carousel",{
     direction: 'vertical',
     spaceBetween: 10,
     slidesPerView: 4,
     freeMode: true,
     watchSlidesProgress: true,
+});
+
+const swiperSlider2 = new Swiper(".swiper-mySlider", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  thumbs: {
+    swiper: swiper,
+  },
 });
