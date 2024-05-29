@@ -20,6 +20,17 @@
             border: 1px solid #FFA800;
             border-radius: 10px;
             padding-left: 1rem;
+            height: 1.3rem;
+            width: 12rem;
+            margin-left: 7rem;
+
+            &:focus{
+                background-color: #fff;
+                
+            }
+            &:focus-visible{
+                border: none;
+            }
         }
         button{
             position: absolute;
@@ -71,11 +82,6 @@
             opacity: 0;
             transition: height .5s, line-height .5s, opacity .5s, padding .5s, border .5s;
         }
-        
-        // &-btn{
-        //     border: unset;
-        //     background: unset;
-        // }
 
         .sort-toggle__input{
             &:checked ~ .secondary-menu__sort-box{
@@ -221,6 +227,7 @@
     }
 }
 
+@media(min-width: 64em){}
 
 @media(min-width: 64em){
     .secondary-menu{
@@ -229,3 +236,4 @@
         } 
     }  
 }
+

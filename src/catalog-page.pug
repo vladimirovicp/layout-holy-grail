@@ -7,8 +7,7 @@ block variables_layout
 block content
     main.main.catalog-page
         .container
-            .catalog-page__slider 
-
+            .catalog-page__slider
                 .swiper-carousel__wrapper
                     .swiper.swiper-carousel(thumbsSlider="")
                         .swiper-wrapper
@@ -22,64 +21,25 @@ block content
                                 img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
                             .swiper-slide
                                 img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                    
                     .swiper-general__button-prev
                     .swiper-general__button-next
                 .swiper.swiper-general
                     .swiper-wrapper
                         .swiper-slide
-                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+                             a(href="#" class='open-modal open-modal__standart')
+                                img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
                         .swiper-slide 
-                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+                            a(href="#" class='open-modal open-modal__standart')
+                                img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
                         .swiper-slide
-                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+                            a(href="#" class='open-modal open-modal__standart')
+                                img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
                         .swiper-slide
-                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+                            a(href="#" class='open-modal open-modal__standart')
+                                img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
                         .swiper-slide
-                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
-
-                //- .swiper.swiper-mySlider
-                //-     .swiper-wrapper
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) alt='???')
-                //-         .swiper-slide 
-                //-             img(src=require(`./assets/img/catalog/1.png`) alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) alt='???')
-
-
-                //- .swiper.swiper-carousel(thumbsSlider="")
-                //-     .swiper-wrapper
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //- .swiper.swiper-slider
-                //-     .swiper-wrapper
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //-         .swiper-slide
-                //-             img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
-                //.swiper-pagination
-                <!-- If we need navigation buttons -->
-                //- .swiper-button-prev
-                //- .swiper-button-next
+                            a(href="#" class='open-modal open-modal__standart')
+                                img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
 
             .catalog-page__info
                 .catalog-page__title Merida Big Seven 10MD Hardtail Mountain Bike Race Red/White
@@ -104,3 +64,22 @@ block content
                     .catalog-page__price-old $ 5 324
                 .catalog-page__btn
                     button.btn-default Into a basket
+
+        .modal.modal__standart
+            span.modal__close.modal-close__standart
+            .modal__content
+                .swiper.swiper-popup
+                    .swiper-wrapper
+                        .swiper-slide
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+                        .swiper-slide 
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+                        .swiper-slide
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+                        .swiper-slide
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+                        .swiper-slide
+                            img(src=require(`./assets/img/catalog/1max.jpg`) class="img-full" alt='???')
+            .swiper-general__button-prev
+            .swiper-general__button-next
+                    
