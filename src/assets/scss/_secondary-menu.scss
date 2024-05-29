@@ -227,7 +227,16 @@
     }
 }
 
-@media(min-width: 64em){}
+@media(max-width: 48em){
+    .secondary-menu{
+        &__search{
+            display: none;
+        }
+        &__nav{
+            display: none;
+        }
+    }
+}
 
 @media(min-width: 64em){
     .secondary-menu{
