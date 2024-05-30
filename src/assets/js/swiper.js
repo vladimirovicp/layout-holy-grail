@@ -69,8 +69,8 @@ const swiperSlider3 = new Swiper(".swiper-popup", {
   //   swiper: swiperCarousel,
   // },
   navigation: {
-    nextEl: ".swiper-general__button-next",
-    prevEl: ".swiper-general__button-prev",
+    nextEl: ".swiper-popup__button-prev",
+    prevEl: ".swiper-popup__button-next",
   },
 });
 
