@@ -16,8 +16,6 @@ if(loginBox){
     //end меняем глах в поле пароль на странице логин
 }
 
-
-
 const registerBox = document.querySelector('.register__box');
 if(registerBox){
 
@@ -63,11 +61,6 @@ if(registerBox){
         }
     }
     //End Изменение цвета
-
-
-
-
-
     
 }
 
@@ -86,7 +79,6 @@ if(modals){
         }
     };
 }
-
 
 
 // modal error
@@ -148,4 +140,53 @@ if(openModalStandart && modalStandart){
 
 
 
+const sortToggleInput = document.querySelector('.sort-toggle__input');
+const filterToggleInput = document.querySelector('.filter-toggle__input');
 
+if(sortToggleInput && sortToggleInput){
+
+    document.onclick = function (e) {
+        if(e.target.className == "_lock"){
+
+            if(filterToggleInput.checked){
+                filterToggleInput.checked = false;
+            }
+
+            if(sortToggleInput.checked){
+                sortToggleInput.checked = false;
+            }
+    
+            document.body.classList.remove('_lock');
+        }
+    };
+
+
+
+    if(sortToggleInput){
+        sortToggleInput.addEventListener('click', ()=>{
+            if(filterToggleInput.checked){
+                filterToggleInput.checked = false;
+            }
+    
+            if (sortToggleInput.checked){
+                document.body.classList.add('_lock');
+            } else{
+                document.body.classList.remove('_lock');
+            }
+        });
+    }
+    
+    
+    if(filterToggleInput){
+        filterToggleInput.addEventListener('click', ()=>{
+            if(sortToggleInput.checked){
+                sortToggleInput.checked = false;
+            }
+            if (filterToggleInput.checked){
+                document.body.classList.add('_lock');
+            } else{
+                document.body.classList.remove('_lock');
+            }
+        });
+    }
+}
