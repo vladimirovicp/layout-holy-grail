@@ -65,9 +65,9 @@ const swiperCarousel =  new Swiper(".swiper-carousel",{
 const swiperSlider3 = new Swiper(".swiper-popup", {
   loop: true,
   spaceBetween: 10,
-  // thumbs: {
-  //   swiper: swiperCarousel,
-  // },
+  thumbs: {
+    swiper: swiperCarousel,
+  },
   navigation: {
     nextEl: ".swiper-popup__button-prev",
     prevEl: ".swiper-popup__button-next",

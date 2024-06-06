@@ -1,7 +1,9 @@
-.catalog-page{
+.catalog-product{
     .container{
         display: flex;
         justify-content: space-between;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 
     &__slider{
@@ -15,7 +17,6 @@
         .swiper{
             &-carousel{
                 width: 6rem;
-                //background-color:green;
                 margin: 0;
                 height: 27rem;
                 top: 50%;
@@ -25,19 +26,16 @@
                     position: relative;
                 }
 
-                .swiper-wrapper{
-
-                }
-
                 .swiper-slide{
                     img{
+                        cursor: pointer;
                         opacity: 0.5;
                         transition: opacity .4s ease-in-out;
                     } 
                 }
-
                 .swiper-slide-thumb-active{
                     img{
+                        cursor: default;
                         opacity: 1;
                     }
                     
@@ -71,12 +69,11 @@
                         bottom: 0;
                     }
                 }
-            }
 
-            .img-full{
-                object-fit: cover;
+                .swiper-slide{
+                    cursor: pointer;
+                }
             }
-
         }
     }
 
@@ -136,14 +133,69 @@
                 transform: translate(-50%, -50%);
             }
         }
-
-        &__btn{
-
-        }
     }
 
     .modal{
-        width: 30rem;
+        width: 90vw;
+        height: 90vh;
+        box-sizing: border-box;
+
+        .modal__content{
+            width: 100%;
+            height: 100%;              
+        }
+
+        .swiper-popup{
+            width: 100%;
+            height: 100%;
+        }
     }
 
+}
+
+
+@media(max-width: 64em){
+    .catalog-product{
+        .container{
+            flex-wrap: wrap;
+        }
+
+        &__slider{
+            order: 2;
+        }
+
+        &__info{
+            order: 0;
+        }
+
+        &__price{
+            order: 1;
+        }
+    }
+}
+
+@media(max-width: 48em){
+    .catalog-product{
+        &__slider{
+            height: 15rem;
+            display: flex;
+            padding: 1rem 0.5rem;
+            .swiper-carousel{
+                padding: 0 0.1rem;
+                width: 4rem;
+                height: 10rem;
+            }
+
+            .swiper-general{
+                width: 12rem;
+                height: 14rem;
+            }
+        }
+    }
+}
+
+@media(min-width: 90em){
+    .catalog-product{
+
+    }
 }
