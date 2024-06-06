@@ -110,10 +110,12 @@ module.exports = (env, argv) => {
         filename: 'swipper/index.html',
       }),
 
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/basket.pug'),
+        favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
+        filename: 'basket/index.html',
+      }),
       
-
-      
-
       
       new FileManagerPlugin({
         events: {
