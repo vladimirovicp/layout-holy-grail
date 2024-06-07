@@ -1,0 +1,22 @@
+.basket{
+
+    .container{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        display: flex;
+    }
+
+    &__wrapper{
+        &-btn{
+            width: 12.5rem;
+        }
+    }
+
+    &__content{
+
+    }
+
+    &__aside{
+
+    }
+}

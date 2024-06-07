@@ -7,9 +7,25 @@ block variables_layout
 block content
     main.main.basket
         .container
-            .basket__content dfd
+            .basket__content
+                .basket__wrapper-btn
+                    <button class="btn-default">Remove all</button>
+                .basket__cards 
+                    .basket__card
+                        .basket__card-img
+                            img(src=require(`./assets/img/catalog/1.png`) class="img-full" alt='???')
+                        .basket__card-name 
+                            a(href="#") Merida Big Seven 10MD Hardtail Mountain Bike Race Red/White
+                        .basket__card-delete
+                        .basket__card-number
+                            .number__minus -
+                            .number__value 1
+                            .number__plus +
+                        .basket__card-price
+                            .price__current $ 3 447
+                            .price__old $ 5 324
 
-            .basket__aside ffdd
+            aside.basket__aside ffdd
 
             
 
