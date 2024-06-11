@@ -1,0 +1,59 @@
+extends pug/layout/main
+block variables_layout
+    -
+        let title = 'catalog'
+        let curPage = '/basket';
+
+block content
+    main.main.about
+        .container
+            .about-wrapper
+                .about__logo
+                    a(href="/" class="about__logo-link")
+                        img(src=require(`./assets/img/svg/logo.svg`) class='img-full' alt='Логотип')
+                    p Holy Grail
+                .about__info
+                    .title Introduce your development team
+                    .text
+                        div 📸💼 Issue RSS-ECOMM-4_19: Craft a Detailed Team Description with Photos (25 points)
+                        div 📝📚 Description
+                        div Introduce your development team 🏢 in a detailed manner. The introduction should not only highlight each team member's contributions to the project 📝 and the effective collaboration methods that led to the creation of the successful product 💡, but also present each member's name 📛, job title or role 🎯, a short bio 📄, a link to their GitHub profile 🌐, and a clear and relevant photo 🖼️. 
+                    .title Introduce your development team
+                    .text
+                        div 📸💼 Issue RSS-ECOMM-4_19: Craft a Detailed Team Description with Photos (25 points)
+                        div 📝📚 Description
+                        div Introduce your development team 🏢 in a detailed manner. The introduction should not only highlight each team member's contributions to the project 📝 and the effective collaboration methods that led to the creation of the successful product 💡, but also present each member's name 📛, job title or role 🎯, a short bio 📄, a link to their GitHub profile 🌐, and a clear and relevant photo 🖼️. 
+                .about__logo-rs
+                    a(href="https://rs.school/courses/javascript-ru" class="logo-rs__link")
+                        img(src=require('./assets/img/rs.png') class='img-full' alt='logo rs')
+            .about__persons
+                .about__person 
+                    .about__person-img
+                        img(src=require('./assets/img/person/rina.png') class='img-full' alt='logo rs')
+                    .about__person-content
+                        .about__person-title
+                            .name Ekaterina Kovaleva
+                            .role roles/job titles 
+                        .about__person-github
+                            a(href="https://github.com/asimo-git" target="_balnk") github.com/asimo-git    
+                        .about__person-info Top performing IT professional with 10 years’ successful experience in Information Technology field. Proficient in hardware and software maintenance. Solid track record of providing the timely positive response to requests regarding computer-related assistance. A deep understanding of the general organizational confidentiality policies associated with IT specialist position.
+                .about__person 
+                    .about__person-img.img__ver-2
+                        img(src=require('./assets/img/person/petr.png') class='img-full' alt='logo rs')
+                    .about__person-content
+                        .about__person-title
+                            .name Petr Fadeev
+                            .role roles/job titles 
+                        .about__person-github
+                            a(href="https://github.com/vladimirovicp" target="_balnk") github.com/vladimirovicp   
+                        .about__person-info Top performing IT professional with 10 years’ successful experience in Information Technology field. Proficient in hardware and software maintenance. Solid track record of providing the timely positive response to requests regarding computer-related assistance. A deep understanding of the general organizational confidentiality policies associated with IT specialist position.
+                .about__person 
+                    .about__person-img.img__ver-3
+                        img(src=require('./assets/img/person/sveta.png') class='img-full' alt='logo rs')
+                    .about__person-content
+                        .about__person-title
+                            .name Svetlana Vorokhobina
+                            .role roles/job titles 
+                        .about__person-github
+                            a(href="https://github.com/svorokhobina" target="_balnk") github.com/svorokhobina    
+                        .about__person-info Top performing IT professional with 10 years’ successful experience in Information Technology field. Proficient in hardware and software maintenance. Solid track record of providing the timely positive response to requests regarding computer-related assistance. A deep understanding of the general organizational confidentiality policies associated with IT specialist position.

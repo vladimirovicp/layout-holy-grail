@@ -14,6 +14,7 @@ import "./assets/scss/page/not-found.scss";
 import "./assets/scss/page/catalog.scss";
 import "./assets/scss/page/catalog-page.scss";
 import "./assets/scss/page/basket.scss";
+import "./assets/scss/page/about.scss";
 
 
 

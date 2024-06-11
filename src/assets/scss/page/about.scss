@@ -1,0 +1,121 @@
+.logo-rs__link{
+    width: 10rem;
+    height: 10rem;
+    display: block;
+}
+
+.about{
+    .container{
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__logo{
+
+        &-link{
+            width: 10rem;
+            height: 6rem;
+            display: block;
+        }
+        p{
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 1.6rem;
+            text-align: center;
+        }
+    }
+
+
+
+    &-wrapper{
+        display: flex;
+        gap:4.5rem;
+        padding-bottom: 3rem;
+    }
+
+    &__info{
+        
+        .title{
+            padding-bottom: .5rem;
+            font-size: 1rem;
+        }
+        .text{
+            padding-bottom: 1rem;
+            color: #808080;
+            //opacity: 0.5;
+        }
+
+    }
+
+    &__person{
+        background: url('../../img/person/background.png');
+        background-repeat: no-repeat;
+        background-size: 75.5rem 13rem;
+        background-position: bottom left;
+        display: flex;
+        color: #fff;
+        margin-bottom: 2rem;
+        &-img{
+            width: 13rem;
+            height: 13rem;
+        }
+        .img{
+            &__ver-2{
+                height: 14rem;
+            }
+
+            &__ver-3{
+                height: 14rem;
+            }
+        }
+
+        &-content{
+            padding-top: 1.75rem;
+            padding-left: 5rem;
+            width: 55rem;
+        }
+
+        &-title{
+            padding-bottom: 0.5rem;
+            .name{
+                display: inline-block;
+                text-transform: uppercase;
+                margin-right: 1rem;
+            }
+            .role{
+                display: inline-block;
+                text-transform: uppercase;
+                opacity: 0.5;
+            }
+        }
+
+        &-github{
+            padding-bottom: 0.5rem;
+            a{
+                color: #fff;
+                text-decoration: underline;
+                text-transform: uppercase;
+            }
+        }
+
+        &-info{
+            opacity: 0.5;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+@media (hover: hover) {
+    .about{
+        &__person{
+            &-github{
+                a{
+                    &:hover{
+                        text-decoration: none;
+                    }  
+                }
+            }
+        }
+    }
+}
