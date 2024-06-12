@@ -121,6 +121,12 @@ module.exports = (env, argv) => {
         favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
         filename: 'about/index.html',
       }),
+
+      new HtmlWebpackPlugin({
+        template: path.resolve(__dirname, 'src/load.pug'),
+        favicon: path.resolve(__dirname, 'src/assets/img/favicon.ico'),
+        filename: 'load/index.html',
+      }),
       
       
       new FileManagerPlugin({

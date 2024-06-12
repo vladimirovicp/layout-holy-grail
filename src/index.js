@@ -2,6 +2,7 @@ import "./assets/scss/style.sass";
 import "./assets/scss/_fonts.scss";
 
 import "./assets/scss/_global.scss";
+import "./assets/scss/load.scss";
 import "./assets/scss/_header.scss";
 import "./assets/scss/_secondary-menu.scss";
 import "./assets/scss/_footer.scss";

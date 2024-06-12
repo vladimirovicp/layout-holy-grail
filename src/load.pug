@@ -1,0 +1,12 @@
+extends pug/layout/main
+block variables_layout
+    -
+        let title = 'catalog'
+        let curPage = '/basket';
+
+block content
+    main.main.about
+        .container
+            .load
+                .load__wraper
+                    img(src=require(`./assets/img/svg/load.svg`) class='img-full' alt='load')
