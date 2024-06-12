@@ -2,7 +2,38 @@
     width: 10rem;
     height: 10rem;
     display: block;
+
+    position: relative;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        display: block;
+        width: 9rem;
+        height: 9rem;
+        background: #000;
+        border-radius: 50%;
+        animation: pulse-border 1500ms ease-out infinite;
+    }
 }
+
+@keyframes pulse-border {
+    0% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+        opacity: 1;
+    }
+    
+    100% {
+        transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+        opacity: 0;
+    } 
+}
+
+
 
 .about{
     .container{
