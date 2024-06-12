@@ -69,13 +69,13 @@
         .title{
             padding-bottom: .5rem;
             font-size: 1rem;
+            text-transform: uppercase;
         }
         .text{
             padding-bottom: 1rem;
             color: #808080;
             //opacity: 0.5;
         }
-
     }
 
     &__person{
@@ -156,9 +156,7 @@
             border-radius: .3rem 0.5rem 0.5rem 0.5rem;
 
             &-content{
-                padding-top: 1rem;
-                padding-left: 2.5rem;
-                padding-right: 1rem;
+                padding: 1rem 1rem 1rem 2.5rem;
             }
 
             &-img{
@@ -184,15 +182,63 @@
 
             
         }
-
-        
-
-        //
     }
 }
 
 @media(min-width: 64em){
 
+}
+
+@media(max-width: 48em){
+    .about{
+        &-wrapper{
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2.5rem;
+            
+        }
+
+        &__logo-rs{
+            position: unset;
+            top: unset;
+        }
+
+        &__person{
+            flex-direction: column;
+            background-size: calc(100vw - 4rem) 13rem;
+
+            &-content{
+                width: 100%;
+                padding: 1rem;
+                box-sizing: border-box;
+
+            }
+
+            .img__ver-1{
+                margin-top: unset;
+                img{
+                    border-radius: 0 0 5rem 0; 
+                }
+            }
+
+            .img__ver-2{
+                height: 13rem;
+                margin-top: unset;
+                img{
+                    border-radius: 0 0 5.2rem 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media(max-width: 20em){
+    .about{
+        &__person{
+            background-size: 260px 207px;
+        }
+    }
 }
 
 
