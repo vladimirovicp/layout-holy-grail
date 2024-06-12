@@ -136,6 +136,65 @@
     }
 }
 
+@media(max-width: 64em){
+    .about{
+        &__info{
+            width: 30rem;
+        }
+
+        &__logo-rs{
+            position: absolute;
+            top: 24rem;
+        }
+
+        &__person{
+            background-image: url("../../img/person/background-wraper.png");
+            background-color: #1c1403;
+            background-repeat: no-repeat;
+            background-position: top left;
+            background-size: 14rem 15.5rem;
+            border-radius: .3rem 0.5rem 0.5rem 0.5rem;
+
+            &-content{
+                padding-top: 1rem;
+                padding-left: 2.5rem;
+                padding-right: 1rem;
+            }
+
+            &-img{
+                flex: 0 0 auto;
+                margin-right: auto;
+                display: flex;
+                
+            }
+
+            .img__ver-1{
+                margin-top: 2.4rem;
+                img{
+                    border-radius: 0 0 5.5rem 0;
+                }
+            }
+
+            .img__ver-2{
+                margin-top: 1.5rem;
+                img{
+                    border-radius: 0 0 5.5rem 0;
+                }
+            }
+
+            
+        }
+
+        
+
+        //
+    }
+}
+
+@media(min-width: 64em){
+
+}
+
 
 @media (hover: hover) {
     .about{
